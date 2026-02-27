@@ -1,0 +1,11 @@
+---
+description: JavaScript/HTML and Plain HTML/CSS/JS development standards
+globs:
+alwaysApply: agent
+---
+
+- All code must be JavaScript (ES6+). Use JSDoc for type hints where helpful.
+- Use semantic HTML5 elements for page sections (`<header>`, `<main>`, `<section>`, `<footer>`).
+- Follow Plain HTML/CSS/JS recommended folder and naming conventions.
+- Keep functions focused and manageable (under 50-75 lines).
+- Use try-catch for async operations; prefer async/await over raw Promises.

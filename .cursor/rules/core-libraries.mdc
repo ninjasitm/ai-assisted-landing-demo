@@ -1,0 +1,10 @@
+---
+description: Core libraries and frameworks used in ai-assisted-landing-demo
+globs:
+alwaysApply: agent
+---
+
+- Use native DOM APIs for common utilities.
+- Use Vanilla JS (module pattern or closures) for state management.
+- Use Tailwind CSS for styling; prefer utility classes over custom CSS.
+- Use shadcn/ui design patterns (adapted for plain HTML) for UI components; check existing components before creating new ones.

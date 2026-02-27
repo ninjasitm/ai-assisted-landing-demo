@@ -1,0 +1,12 @@
+---
+description: Deprecated patterns and anti-practices to avoid
+globs:
+alwaysApply: agent
+---
+
+- No deprecated HTML/CSS/JS features.
+- No global CSS outside Tailwind CSS configuration.
+- No unnecessary JavaScript frameworks; keep it vanilla.
+- No custom solutions for problems solved by core libraries.
+- No inconsistent naming for events or handlers.
+- No mixing server and client code inappropriately.

@@ -1,0 +1,12 @@
+---
+description: Component structure and organization standards
+globs:
+alwaysApply: agent
+---
+
+- Each page section is a distinct HTML component using semantic elements (e.g., `<section class="hero">`).
+- Follow the HTML section pattern for all page components.
+- Use clear and descriptive naming for CSS classes, IDs, and JavaScript functions.
+- Keep logic within section handlers focused and manageable.
+- Add code comments for complex logic or non-obvious implementations.
+- Use bracketed identifiers for logs: `[ComponentName]: message`.

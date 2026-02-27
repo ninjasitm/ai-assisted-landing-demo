@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>AI-Assisted Landing Demo — Build Faster with AI</title>
+        <meta
+            name="description"
+            content="A hands-on demo showing how AI-assisted development accelerates the creation of beautiful, production-ready landing pages."
+        />
+
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="AI-Assisted Landing Demo"
+        />
+        <meta
+            property="og:description"
+            content="Build landing pages faster with AI-assisted development."
+        />
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:url"
+            content="https://ninjasitm.github.io/ai-assisted-landing-demo/"
+        />
+
+        <!-- Favicon (inline SVG → data URI, no external file needed) -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+        />
+
+        <!-- Tailwind CSS via CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Custom styles -->
+        <link
+            rel="stylesheet"
+            href="css/styles.css"
+        />
+
+        <!-- Tailwind config: extend with slate as default -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            slate: {
+                                850: "#172033",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+
+    <body class="bg-slate-950 text-white antialiased">
+
+        <!-- ── Navigation ──────────────────────────────────────────────── -->
+        <nav class="fixed top-0 inset-x-0 z-50 bg-slate-950/70 border-b border-slate-800/60">
+            <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+                <a
+                    href="#hero"
+                    class="text-sm font-bold text-white tracking-tight hover:text-sky-400 transition-colors"
+                >
+                    ai-assisted-landing-demo
+                </a>
+                <div class="flex items-center gap-6">
+                    <a
+                        href="#stats"
+                        class="text-sm text-slate-400 hover:text-white transition-colors hidden sm:block"
+                    >Stats</a>
+                    <a
+                        href="#contact"
+                        class="text-sm text-slate-400 hover:text-white transition-colors hidden sm:block"
+                    >Contact</a>
+                    <a
+                        href="https://github.com/ninjasitm/ai-assisted-landing-demo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition-colors"
+                    >
+                        <svg
+                            class="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.912.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.566 4.935.359.308.678.917.678 1.849 0 1.335-.012 2.41-.012 2.737 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ── Section mount points (composed via JS modules) ──────────── -->
+        <main>
+            <div id="hero-mount"></div>
+            <div id="stats-mount"></div>
+            <div id="cta-mount"></div>
+        </main>
+
+        <!-- ── Footer ────────────────────────────────────────────────────── -->
+        <footer class="bg-slate-950 border-t border-slate-800/60 py-8 px-6 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026
+                <a
+                    href="https://github.com/ninjasitm"
+                    class="hover:text-slate-300 transition-colors"
+                >ninjasitm</a>
+                &mdash; Built with AI-assisted development &mdash;
+                <a
+                    href="https://github.com/ninjasitm/ai-assisted-landing-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-slate-300 transition-colors underline underline-offset-2"
+                >
+                    Open Source on GitHub
+                </a>
+            </p>
+        </footer>
+
+        <!-- ── JS entry point (ES module) ──────────────────────────────── -->
+        <script
+            type="module"
+            src="js/main.js"
+        ></script>
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+---
+description: Database schema management and migrations
+globs:
+alwaysApply: agent
+---
+
+- No database is used in this project (static site).
+- Create migrations with descriptive names if a database is added in the future.
+- Apply migrations to development database before committing.
+- Maintain corresponding model definitions for database entities.
+- Update affected services after schema changes.
+- Run tests after schema modifications.
